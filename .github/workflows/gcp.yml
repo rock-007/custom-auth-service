@@ -7,7 +7,7 @@ jobs:
     name: Build and push to GCP
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: idsServer
+      IMAGE_NAME: idskeycloakserver
       PROJECT_ID: phonic-obelisk-409812
     steps:
       - name: checkout
