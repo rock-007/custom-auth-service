@@ -2,7 +2,7 @@ FROM quay.io/keycloak/keycloak:21.0 as builder
 
 # Configure a database vendor
 ENV KC_DB=postgres
-
+ENV HOST=0.0.0.0
 WORKDIR /opt/keycloak
 
 # for demonstration purposes only, please make sure to use proper certificates in production instead
