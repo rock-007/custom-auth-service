@@ -39,7 +39,7 @@ jobs:
         env:
           GIT_TAG: idskeycloakserverartifacts
         run: |-
-          docker tag $IMAGE_NAME:latest us-west2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:latest
-          docker tag $IMAGE_NAME:latest us-west2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:$GIT_TAG
-          docker push us-west2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:latest
-          docker push us-west2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:$GIT_TAG
+          docker tag $IMAGE_NAME:latest us-west2-docker.pkg.dev/$PROJECT_ID/idskeycloakserverartifacts/$IMAGE_NAME:latest
+          docker tag $IMAGE_NAME:latest us-west2-docker.pkg.dev/$PROJECT_ID/idskeycloakserverartifacts/$IMAGE_NAME:$GIT_TAG
+          docker push us-west2-docker.pkg.dev/$PROJECT_ID/idskeycloakserverartifacts/$IMAGE_NAME:latest
+          docker push us-west2-docker.pkg.dev/$PROJECT_ID/idskeycloakserverartifacts/$IMAGE_NAME:$GIT_TAG
